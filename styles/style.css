@@ -104,8 +104,12 @@ header .btns #register {
 
 .features-dropdown ul li {
   list-style-type: none;
+}
+
+.features-dropdown ul li a {
   text-decoration: none;
   padding: 4px;
+  color: dimgray;
 }
 
 .company-dropdown {
@@ -129,8 +133,16 @@ header .btns #register {
 
 .company-dropdown ul li {
   list-style-type: none;
+}
+
+.company-dropdown ul li a {
   text-decoration: none;
   padding: 4px;
+  color: dimgray;
+}
+
+.show {
+  display: block;
 }
 
 .hero {
