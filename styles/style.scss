@@ -1,5 +1,8 @@
 $base-font-family: 'Epilogue', sans-serif;
 $font-color: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+$almost-white: hsl(0, 0%, 98%);
+
 
 * {
     box-sizing: border-box;
@@ -39,6 +42,11 @@ header {
                 a {
                     text-decoration: none;
                     color: $font-color;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $almost-black;
+                    }
                 }
             }
         }
@@ -53,6 +61,11 @@ header {
 
         .btn {
             margin: 0 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: $almost-black;
+            }
         }
 
         #login {
@@ -67,13 +80,59 @@ header {
     }
 }
 
+.features-dropdown {
+    // display: none;
+    background: $almost-white;
+    width: 130px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    font-size: 14px;
+    box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
+    z-index: 1;
+    ul {
+        display: block;
+        padding: 15px;
+        li {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 4px;
+        }
+    }
+}
+
+.company-dropdown {
+    // display: none;
+    background: $almost-white;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 27%;
+    font-size: 14px;
+    box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
+    z-index: 1;
+    ul {
+        display: block;
+        padding: 15px;
+        li {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 4px;
+        }
+    }
+}
+
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin: 30px 20px 0 110px;
+    margin: 30px 10px 50px 100px;
 
     .head-text {
+        margin-top: 100px;
         h1 {
             font-size: 2.4rem;
             line-height: 1.2;
@@ -92,6 +151,13 @@ header {
             border-radius: 15px;
             outline: none;
             margin-bottom: 40px;
+            border: 1px solid #000;
+            cursor: pointer;
+
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
         }
 
         img {
@@ -102,7 +168,7 @@ header {
 
     .heroimg img {
         width: 300px;
-        height: 300px;
+        height: 400px;
     }
 }
 

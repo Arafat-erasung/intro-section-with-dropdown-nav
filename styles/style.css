@@ -48,6 +48,11 @@ header nav ul li a {
   color: dimgray;
 }
 
+header nav ul li a:hover {
+  cursor: pointer;
+  color: #141414;
+}
+
 header .btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +66,11 @@ header .btns {
 
 header .btns .btn {
   margin: 0 15px;
+  cursor: pointer;
+}
+
+header .btns .btn:hover {
+  color: #141414;
 }
 
 header .btns #login {
@@ -73,6 +83,54 @@ header .btns #register {
   border-radius: 15px;
 }
 
+.features-dropdown {
+  background: #fafafa;
+  width: 130px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 0px 60px 5px #dcd2d2;
+          box-shadow: 0px 0px 60px 5px #dcd2d2;
+  z-index: 1;
+}
+
+.features-dropdown ul {
+  display: block;
+  padding: 15px;
+}
+
+.features-dropdown ul li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.company-dropdown {
+  background: #fafafa;
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 27%;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 0px 60px 5px #dcd2d2;
+          box-shadow: 0px 0px 60px 5px #dcd2d2;
+  z-index: 1;
+}
+
+.company-dropdown ul {
+  display: block;
+  padding: 15px;
+}
+
+.company-dropdown ul li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 4px;
+}
+
 .hero {
   display: -ms-grid;
   display: grid;
@@ -80,7 +138,11 @@ header .btns #register {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  margin: 30px 20px 0 110px;
+  margin: 30px 10px 50px 100px;
+}
+
+.hero .head-text {
+  margin-top: 100px;
 }
 
 .hero .head-text h1 {
@@ -101,6 +163,13 @@ header .btns #register {
   border-radius: 15px;
   outline: none;
   margin-bottom: 40px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.hero .head-text button:hover {
+  background: #fff;
+  color: #000;
 }
 
 .hero .head-text img {
@@ -110,6 +179,6 @@ header .btns #register {
 
 .hero .heroimg img {
   width: 300px;
-  height: 300px;
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
