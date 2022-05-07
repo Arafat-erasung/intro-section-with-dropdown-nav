@@ -27,14 +27,41 @@ header {
     }
 
     .navbar {
-        display: flex;
+        display: inline-flex;
+        align-items: center;
         margin: 5px 0 0 29px;
 
         button {
             background: none;
             border: none;
             color: $font-color;
+            font-family: $base-font-family;
+            padding: 4px;
+            font-size: 16px;
+
+            &:hover {
+                color: $almost-black;
+                cursor: pointer;
+            }
+        }
+
+        ul {
+            display: flex;
             padding: 3px;
+
+            li {
+                list-style-type: none;
+                padding: 0 4px 0 4px;
+
+                a {
+                    text-decoration: none;
+                    color: $font-color;
+
+                    &:hover {
+                        color: $almost-black;
+                    }
+                }
+            }
         }
     }
 
@@ -71,11 +98,11 @@ header {
 .features-dropdown {
     display: none;
     background: $almost-white;
-    width: 130px;
+    padding: 10px;
     border-radius: 10px;
     position: absolute;
     top: 10%;
-    left: 12%;
+    left: 10%;
     font-size: 14px;
     box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
     z-index: 1;
@@ -91,11 +118,10 @@ header {
 .company-dropdown {
     display: none;
     background: $almost-white;
-    width: 100px;
     border-radius: 10px;
     position: absolute;
     top: 10%;
-    left: 27%;
+    left: 23%;
     font-size: 14px;
     box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
     z-index: 1;

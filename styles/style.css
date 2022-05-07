@@ -24,9 +24,12 @@ header span {
 }
 
 header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px 0 0 29px;
 }
 
@@ -34,7 +37,35 @@ header .navbar button {
   background: none;
   border: none;
   color: dimgray;
+  font-family: "Epilogue", sans-serif;
+  padding: 4px;
+  font-size: 16px;
+}
+
+header .navbar button:hover {
+  color: #141414;
+  cursor: pointer;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 3px;
+}
+
+header .navbar ul li {
+  list-style-type: none;
+  padding: 0 4px 0 4px;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+header .navbar ul li a:hover {
+  color: #141414;
 }
 
 header .btns {
@@ -70,11 +101,11 @@ header .btns #register {
 .features-dropdown {
   display: none;
   background: #fafafa;
-  width: 130px;
+  padding: 10px;
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  left: 12%;
+  left: 10%;
   font-size: 14px;
   -webkit-box-shadow: 0px 0px 60px 5px #dcd2d2;
           box-shadow: 0px 0px 60px 5px #dcd2d2;
@@ -92,11 +123,10 @@ header .btns #register {
 .company-dropdown {
   display: none;
   background: #fafafa;
-  width: 100px;
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  left: 27%;
+  left: 23%;
   font-size: 14px;
   -webkit-box-shadow: 0px 0px 60px 5px #dcd2d2;
           box-shadow: 0px 0px 60px 5px #dcd2d2;
