@@ -1,19 +1,29 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function toggleDropDown() {
-    document.getElementById("dropDown").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.drop')) {
-      let dropdowns = document.getElementsByClassName("features-dropdown");
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+function toggleFeatures() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  let myDropdown = document.getElementById("dropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
     }
   }
+}
+
+
+
+function toggleCompany() {
+  document.getElementById("com-dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.com-dropbtn')) {
+  let myDropdown = document.getElementById("com-dropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
