@@ -23,7 +23,7 @@ header {
 
     span {
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 2.4rem;
     }
 
     .navbar {
@@ -114,6 +114,10 @@ header {
         text-decoration: none;
         padding: 4px;
         color: $font-color;
+
+        &:hover {
+            color: $almost-black ;
+        }
     }
 }
 
@@ -133,6 +137,10 @@ header {
         text-decoration: none;
         padding: 4px;
         color: $font-color;
+
+        &:hover {
+            color: $almost-black ;
+        }
     }
 }
 
@@ -183,9 +191,13 @@ header {
     }
 
     .heroimg img {
-        width: 300px;
+        width: 100%;
         height: 400px;
     }
+}
+
+.sm-display {
+    display: none;
 }
 
 @media screen and (max-width: 375px) {
@@ -194,10 +206,43 @@ header {
     }
 
     body {
-        margin: 0;
+        margin: 15px;
 
         .hero {
+            display: none;
+            margin: 0;
+
+           .head-text{ 
+               h1{  
+                    text-align: center;
+                    font-size: 30px;
+                    padding-top: 20px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                button {
+                    margin-left: 37%;
+                }
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+        .sm-display {
             display: block;
+
+            .head-text{
+                margin: 0;
+            }
         }
     }
 }

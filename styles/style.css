@@ -122,6 +122,10 @@ header .btns #register {
   color: dimgray;
 }
 
+.features-dropdown a:hover {
+  color: #141414;
+}
+
 .company-dropdown {
   display: none;
   background: #fafafa;
@@ -141,6 +145,10 @@ header .btns #register {
   text-decoration: none;
   padding: 4px;
   color: dimgray;
+}
+
+.company-dropdown a:hover {
+  color: #141414;
 }
 
 .show {
@@ -194,8 +202,12 @@ header .btns #register {
 }
 
 .hero .heroimg img {
-  width: 300px;
+  width: 100%;
   height: 400px;
+}
+
+.sm-display {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {
@@ -203,10 +215,34 @@ header .btns #register {
     display: none;
   }
   body {
-    margin: 0;
+    margin: 15px;
   }
   body .hero {
+    display: none;
+    margin: 0;
+  }
+  body .hero .head-text h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  body .hero .head-text h1 br {
+    display: none;
+  }
+  body .hero .head-text p {
+    text-align: center;
+  }
+  body .hero .head-text button {
+    margin-left: 37%;
+  }
+  body .hero .head-text img {
+    width: 80px;
+  }
+  body .sm-display {
     display: block;
+  }
+  body .sm-display .head-text {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
