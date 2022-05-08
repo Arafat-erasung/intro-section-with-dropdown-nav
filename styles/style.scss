@@ -74,7 +74,7 @@ header {
         bottom: 0;
         left: 25%;
 
-        .btn {
+        button {
             margin: 0 15px;
             cursor: pointer;
 
@@ -85,6 +85,8 @@ header {
 
         #login {
             padding: 10px;
+            background: none;
+            border: none;
         }
 
         #register {
@@ -143,6 +145,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: 27px 10px 50px 100px;
+    
 
     .head-text {
         margin-top: 100px;
@@ -185,3 +188,16 @@ header {
     }
 }
 
+@media screen and (max-width: 375px) {
+     nav, .btns>button {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+
+        .hero {
+            display: block;
+        }
+    }
+}

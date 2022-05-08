@@ -79,17 +79,19 @@ header .btns {
   left: 25%;
 }
 
-header .btns .btn {
+header .btns button {
   margin: 0 15px;
   cursor: pointer;
 }
 
-header .btns .btn:hover {
+header .btns button:hover {
   color: #141414;
 }
 
 header .btns #login {
   padding: 10px;
+  background: none;
+  border: none;
 }
 
 header .btns #register {
@@ -194,5 +196,17 @@ header .btns #register {
 .hero .heroimg img {
   width: 300px;
   height: 400px;
+}
+
+@media screen and (max-width: 375px) {
+  nav, .btns > button {
+    display: none;
+  }
+  body {
+    margin: 0;
+  }
+  body .hero {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
