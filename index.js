@@ -12,6 +12,16 @@ window.onclick = function(e) {
   }
 }
 
+//menubar
+function menubar() {
+  let menuItems = document.getElementById("navbar");
+  if (menuItems.style.display === "block") {
+    menuItems.style.display = "none";
+  } else {
+    menuItems.style.display = "block";
+  }
+}
+
 
 
 function toggleCompany() {
