@@ -16,14 +16,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  background-color: #141414;
 }
 
 body .main-container {
   margin: 30px;
   width: 375px;
   height: 780px;
-  border: 1px solid #141414;
   font-family: "Epilogue", sans-serif;
+  background-color: #fafafa;
+  position: relative;
 }
 
 body .main-container header .logo-menu {
@@ -42,5 +44,99 @@ body .main-container header .logo-menu {
 body .main-container header .logo-menu .name-logo span {
   font-size: 30px;
   font-weight: bold;
+}
+
+body .main-container .wrapper {
+  margin: 10px;
+}
+
+body .main-container .wrapper .info-text {
+  padding: 10px;
+}
+
+body .main-container .wrapper .info-text h1 {
+  padding: 15px;
+  font-size: 1.8rem;
+}
+
+body .main-container .wrapper .info-text p {
+  text-align: center;
+  color: dimgray;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+body .main-container .wrapper button {
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  background: #141414;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+  position: relative;
+  top: 0;
+  left: 30%;
+  bottom: 0;
+}
+
+body .main-container .wrapper .clients {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 30px;
+}
+
+body .main-container .wrapper .clients img {
+  width: 70px;
+  margin: 5px;
+}
+
+body .main-container .sidenav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fafafa;
+  width: 64%;
+  height: 780px;
+  z-index: 4;
+}
+
+body .main-container .sidenav .close-menu {
+  float: right;
+  margin: 20px 20px 30px 10px;
+}
+
+body .main-container .sidenav nav ul {
+  display: block;
+  margin: 90px 20px 20px 10px;
+}
+
+body .main-container .sidenav nav ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+body .main-container .sidenav nav ul li a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+body .main-container .sidenav .login-register {
+  margin: 20px;
+}
+
+body .main-container .sidenav .login-register #login button {
+  border: none;
+}
+
+body .main-container .sidenav .login-register button {
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid #141414;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  background: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-$mainFont-family :'Epilogue', sans-serif;
+$mainfont :'Epilogue', sans-serif;
 $almost-white: hsl(0, 0%, 98%);
 $medium-gray: hsl(0, 0%, 41%);
 $Almost-black: hsl(0, 0%, 8%);
@@ -16,13 +16,15 @@ body {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        background-color: $Almost-black;
 
     .main-container {
         margin: 30px;
         width: 375px;
         height: 780px;
-        border: 1px solid $Almost-black;
-        font-family: $mainFont-family;
+        font-family: $mainfont;
+        background-color: $almost-white;
+        position: relative;
 
         header {
             .logo-menu {
@@ -40,5 +42,101 @@ body {
             }
         }
         
+        .wrapper {
+            margin: 10px;
+
+            .info-text {
+                padding: 10px;
+
+                h1 {
+                    padding: 15px;
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    text-align: center;
+                    color: $medium-gray;
+                    line-height: 1.5;
+                    padding-bottom: 15px;
+                }
+            }
+
+            button {
+                padding: 10px 25px 10px 25px;
+                border-radius: 10px;
+                background: $Almost-black;
+                color: #fff;
+                font-weight: 500;
+                outline: none;
+                position: relative;
+                top: 0;
+                left: 30%;
+                bottom: 0;
+            }
+
+            .clients {
+                display: inline-flex;
+                padding-top: 30px;
+
+                img {
+                    width: 70px;
+                    margin: 5px;
+                }
+            }
+
+        }
+
+        .sidenav {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: $almost-white;
+            width: 64%;
+            height: 780px;
+            z-index: 4;
+
+            .close-menu {
+                float: right;
+                margin: 20px 20px 30px 10px ;
+            }
+
+            nav {
+                
+                ul {
+                    display: block;
+                    margin: 90px 20px 20px 10px;
+
+                    li {
+                        list-style-type: none;
+                        padding: 10px;
+
+                         a {
+                            text-decoration: none;
+                            color: $medium-gray;
+                        }
+                    }
+                }
+            }
+
+            .login-register {
+                margin: 20px;
+
+                #login button{
+                    border: none;
+                }
+                button {
+                    width: 100%;
+                    padding: 10px 30px;
+                    border-radius: 15px;
+                    border: 2px solid $Almost-black;
+                    font-family: $mainfont;
+                    font-weight: 500;
+                    background: none;
+                }
+            }
+
+        }
+
     }
 }
