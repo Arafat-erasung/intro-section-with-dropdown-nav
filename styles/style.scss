@@ -1,273 +1,44 @@
-$base-font-family: 'Epilogue', sans-serif;
-$font-color: hsl(0, 0%, 41%);
-$almost-black: hsl(0, 0%, 8%);
+$mainFont-family :'Epilogue', sans-serif;
 $almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$Almost-black: hsl(0, 0%, 8%);
 
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
 }
 
- body {
-        margin: 0 50px 0 50px;
-        font-family: $base-font-family;
-    }
 
-header {
-    display: flex;
-    padding: 10px;
-    width: 100%;
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
 
-    .logo-menu {
-        span {
-            font-weight: 700;
-            font-size: 2.4rem;
-        }
+    .main-container {
+        margin: 30px;
+        width: 375px;
+        height: 780px;
+        border: 1px solid $Almost-black;
+        font-family: $mainFont-family;
 
-        #hamburger-menu {
-            display: none;
+        header {
+            .logo-menu {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px;
+                align-items: center;
+
+                .name-logo{
+                    span {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
         
-    }
-
-    .navbar {
-        display: inline-flex;
-        align-items: center;
-        margin: 5px 0 0 29px;
-
-        button {
-            background: none;
-            border: none;
-            color: $font-color;
-            font-family: $base-font-family;
-            padding: 4px;
-            font-size: 16px;
-
-            &:hover {
-                color: $almost-black;
-                cursor: pointer;
-            }
-        }
-
-        ul {
-            display: flex;
-            padding: 3px;
-
-            li {
-                list-style-type: none;
-                padding: 0 4px 0 4px;
-
-                a {
-                    text-decoration: none;
-                    color: $font-color;
-
-                    &:hover {
-                        color: $almost-black;
-                    }
-                }
-            }
-        }
-    }
-
-
-    .btns {
-        display: flex;
-        color: $font-color;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 25%;
-
-        button {
-            margin: 0 15px;
-            cursor: pointer;
-
-            &:hover {
-                color: $almost-black;
-            }
-        }
-
-        #login {
-            padding: 10px;
-            background: none;
-            border: none;
-        }
-
-        #register {
-            border: 2px solid $font-color;
-            padding: 10px;
-            border-radius: 15px;
-        }
-    }
-}
-
-.features-dropdown {
-    display: none;
-    background: $almost-white;
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 14px;
-    box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
-    z-index: 1;
-    a {
-        display: block;
-        padding: 15px;
-        text-decoration: none;
-        padding: 4px;
-        color: $font-color;
-
-        &:hover {
-            color: $almost-black ;
-        }
-    }
-}
-
-.company-dropdown {
-    display: none;
-    background: $almost-white;
-    border-radius: 10px;
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    font-size: 14px;
-    box-shadow: 0px 0px 60px 5px rgb(220, 210, 210);
-    z-index: 1;
-    padding: 10px;
-    a {
-        display: block;
-        text-decoration: none;
-        padding: 4px;
-        color: $font-color;
-
-        &:hover {
-            color: $almost-black ;
-        }
-    }
-}
-
-.show {
-    display: block;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 27px 10px 50px 100px;
-    
-
-    .head-text {
-        margin-top: 100px;
-        h1 {
-            font-size: 2.4rem;
-            line-height: 1.2;
-        }
-
-        p {
-            padding:30px 0;
-            font-size: 14px;
-            color: $font-color;
-        }
-
-        button {
-            background: rgb(15, 15, 15);
-            color: #fff;
-            padding: 10px;
-            border-radius: 15px;
-            outline: none;
-            margin-bottom: 40px;
-            border: 1px solid #000;
-            cursor: pointer;
-
-            &:hover {
-                background: #fff;
-                color: #000;
-            }
-        }
-
-        img {
-            width: 70px;
-            padding: 0 10px;
-        }
-    }
-
-    .heroimg img {
-        width: 100%;
-        height: 400px;
-    }
-}
-
-.sm-display {
-    display: none;
-}
-
-@media screen and (max-width: 375px) {
-    .logo-menu {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        #hamburger-menu {
-            display: block;
-            font-size: 2rem;
-            border: none;
-            cursor: pointer;
-            background: none;
-
-            i {
-                display: block;
-            }
-        }
-    }
-
-     nav, .btns>button {
-        display: none;
-    }
-
-    body {
-        margin: 15px;
-
-        .hero {
-            display: none;
-            margin: 0;
-
-           .head-text{ 
-               h1{  
-                    text-align: center;
-                    font-size: 30px;
-                    padding-top: 20px;
-
-                    br {
-                        display: none;
-                    }
-                }
-
-                p {
-                    text-align: center;
-                }
-
-                button {
-                    margin-left: 37%;
-                }
-
-                img {
-                    width: 70px;
-                }
-            }
-        }
-
-        .sm-display {
-            display: block;
-
-            .head-text{
-                margin: 0;
-            }
-        }
     }
 }

@@ -2,99 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-  <script src="./index.js" defer></script>
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Snap</title>
 </head>
 <body>
-  <header>
+  <div class="main-container">
+    <header>
       <div class="logo-menu">
-        <span>snap</span>
-        <button id="hamburger-menu"><i class="fa fa-bars"></i></button>
-      </div>
-    <nav>
-      <div class="navbar">
-        <div class="Features">
-        <button class="dropbtn" onclick="toggleFeatures()">Features
-          <img src="images/icon-arrow-down.svg" alt="">
-        </button>
-        <div class="features-dropdown" id="dropdown">
-          <a href="#"><img src="images/icon-todo.svg" alt=""> Todo List</a>
-          <a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a>
-          <a href="#"><img src="images/icon-reminders.svg" alt=""> Reminders</a>
-          <a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a>
+        <div class="name-logo">
+          <span>snap</span>
         </div>
+        <div class="menu">
+          <img src="images/icon-menu.svg" alt="menu">
         </div>
-        
-        <div class="company">
-          <button class="com-dropbtn" onclick="toggleCompany()">Company
-            <img src="images/icon-arrow-down.svg" alt="">
-          </button>
-          <div class="company-dropdown" id="com-dropdown">
-            <a href="#"> History</a>
-            <a href="#"> Our Team</a>
-            <a href="#"> Blog</a>
-          </div>
-          </div>
-
-          <ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
       </div>
-    </nav>
-    <div class="btns">
-      <button class="btn" id="login">Login</button>
-      <button class="btn" id="register">Register</button>
-    </div>
-  </header>
+    </header>
+  </div>
 
-
-  <section class="hero">
-    <div class="head-text">
-      <h1>Make<br> remote work</h1>
-      <p>Get your team in sync, no matter your location.<br>
-        Streamline processes, create team ritual, and <br> watch productivity soar.
-      </p>
-
-      <button>Lean More</button>
-
-      <div class="brands">
-        <img src="images/client-databiz.svg" alt="databiz">
-        <img src="images/client-audiophile.svg" alt="audiophile">
-        <img src="images/client-meet.svg" alt="meet">
-        <img src="images/client-maker.svg" alt="maker">
-      </div>
-    </div>
-    <div class="heroimg">
-      <img src="images/image-hero-desktop.png" alt="hero">
-    </div>
-  </section>
-
-  <section class="hero sm-display">
-
-    <div class="heroimg">
-      <img src="images/image-hero-desktop.png" alt="hero">
-    </div>
-    <div class="head-text">
-      <h1>Make<br> remote work</h1>
-      <p>Get your team in sync, no matter your location.<br>
-        Streamline processes, create team ritual, and <br> watch productivity soar.
-      </p>
-
-      <button>Lean More</button>
-
-      <div class="brands">
-        <img src="images/client-databiz.svg" alt="databiz">
-        <img src="images/client-audiophile.svg" alt="audiophile">
-        <img src="images/client-meet.svg" alt="meet">
-        <img src="images/client-maker.svg" alt="maker">
-      </div>
-    </div>
-  </section>
 </body>
 </html>
