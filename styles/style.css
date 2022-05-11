@@ -123,6 +123,7 @@ body .main-container .sidenav nav button {
 }
 
 body .main-container .sidenav nav .features-content, body .main-container .sidenav nav .company-content {
+  display: none;
   padding: 10px;
   margin-left: 20px;
 }
