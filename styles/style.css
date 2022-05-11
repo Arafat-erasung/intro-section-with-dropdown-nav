@@ -92,7 +92,6 @@ body .main-container .wrapper .clients img {
 }
 
 body .main-container .sidenav {
-  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -107,9 +106,41 @@ body .main-container .sidenav .close-menu {
   margin: 20px 20px 30px 10px;
 }
 
+body .main-container .sidenav nav {
+  display: block;
+  margin-top: 80px;
+}
+
+body .main-container .sidenav nav button {
+  display: block;
+  padding: 10px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  font-family: "Epilogue", sans-serif;
+  color: dimgray;
+}
+
+body .main-container .sidenav nav .features-content, body .main-container .sidenav nav .company-content {
+  display: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+body .main-container .sidenav nav .features-content a, body .main-container .sidenav nav .company-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: dimgray;
+}
+
+body .main-container .sidenav nav .features-content a img, body .main-container .sidenav nav .company-content a img {
+  margin-right: 5px;
+}
+
 body .main-container .sidenav nav ul {
   display: block;
-  margin: 90px 20px 20px 10px;
+  margin-left: 10px;
 }
 
 body .main-container .sidenav nav ul li {

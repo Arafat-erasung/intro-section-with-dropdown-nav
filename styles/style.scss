@@ -87,7 +87,7 @@ body {
         }
 
         .sidenav {
-            display: none;
+            // display: none;
             position: absolute;
             right: 0;
             top: 0;
@@ -102,10 +102,40 @@ body {
             }
 
             nav {
+                display: block;
+                margin-top: 80px;
+
+                button {
+                    display: block;
+                    padding: 10px;
+                    margin-left: 10px;
+                    background: none;
+                    border: none;
+                    font-family: $mainfont;
+                    color: $medium-gray;
+                }
+
+
+                .features-content, .company-content {
+                    display: none;
+                    padding: 10px;
+                    margin-left: 20px;
+
+                    a {
+                        display: block;
+                        padding: 10px;
+                        text-decoration: none;
+                        color: $medium-gray;
+
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                }
                 
                 ul {
                     display: block;
-                    margin: 90px 20px 20px 10px;
+                    margin-left: 10px;
 
                     li {
                         list-style-type: none;
