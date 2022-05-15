@@ -5,24 +5,7 @@
   margin: 0;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-  background-color: #141414;
-}
-
 body .main-container {
-  margin: 30px;
-  width: 375px;
-  height: 780px;
   font-family: "Epilogue", sans-serif;
   background-color: #fafafa;
   position: relative;
@@ -46,6 +29,87 @@ body .main-container header .logo-menu .name-logo span {
   font-weight: bold;
 }
 
+body .main-container header .sidenav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fafafa;
+  width: 64%;
+  height: 780px;
+  z-index: 4;
+}
+
+body .main-container header .sidenav .close-menu {
+  float: right;
+  margin: 20px 20px 30px 10px;
+}
+
+body .main-container header .sidenav nav {
+  display: block;
+  margin-top: 80px;
+}
+
+body .main-container header .sidenav nav button {
+  display: block;
+  padding: 10px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  font-family: "Epilogue", sans-serif;
+  color: dimgray;
+}
+
+body .main-container header .sidenav nav .features-content, body .main-container header .sidenav nav .company-content {
+  display: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+body .main-container header .sidenav nav .features-content a, body .main-container header .sidenav nav .company-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: dimgray;
+}
+
+body .main-container header .sidenav nav .features-content a img, body .main-container header .sidenav nav .company-content a img {
+  margin-right: 5px;
+}
+
+body .main-container header .sidenav nav ul {
+  display: block;
+  margin-left: 10px;
+}
+
+body .main-container header .sidenav nav ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+body .main-container header .sidenav nav ul li a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+body .main-container header .sidenav .login-register {
+  margin: 20px;
+}
+
+body .main-container header .sidenav .login-register #login button {
+  border: none;
+}
+
+body .main-container header .sidenav .login-register button {
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid #141414;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  background: none;
+}
+
 body .main-container .wrapper {
   margin: 10px;
 }
@@ -57,6 +121,7 @@ body .main-container .wrapper .info-text {
 body .main-container .wrapper .info-text h1 {
   padding: 15px;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 body .main-container .wrapper .info-text p {
@@ -91,84 +156,36 @@ body .main-container .wrapper .clients img {
   margin: 5px;
 }
 
-body .main-container .sidenav {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #fafafa;
-  width: 64%;
-  height: 780px;
-  z-index: 4;
-}
-
-body .main-container .sidenav .close-menu {
-  float: right;
-  margin: 20px 20px 30px 10px;
-}
-
-body .main-container .sidenav nav {
-  display: block;
-  margin-top: 80px;
-}
-
-body .main-container .sidenav nav button {
-  display: block;
-  padding: 10px;
-  margin-left: 10px;
-  background: none;
-  border: none;
-  font-family: "Epilogue", sans-serif;
-  color: dimgray;
-}
-
-body .main-container .sidenav nav .features-content, body .main-container .sidenav nav .company-content {
-  display: none;
-  padding: 10px;
-  margin-left: 20px;
-}
-
-body .main-container .sidenav nav .features-content a, body .main-container .sidenav nav .company-content a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: dimgray;
-}
-
-body .main-container .sidenav nav .features-content a img, body .main-container .sidenav nav .company-content a img {
-  margin-right: 5px;
-}
-
-body .main-container .sidenav nav ul {
-  display: block;
-  margin-left: 10px;
-}
-
-body .main-container .sidenav nav ul li {
-  list-style-type: none;
-  padding: 10px;
-}
-
-body .main-container .sidenav nav ul li a {
-  text-decoration: none;
-  color: dimgray;
-}
-
-body .main-container .sidenav .login-register {
-  margin: 20px;
-}
-
-body .main-container .sidenav .login-register #login button {
-  border: none;
-}
-
-body .main-container .sidenav .login-register button {
-  width: 100%;
-  padding: 10px 30px;
-  border-radius: 15px;
-  border: 2px solid #141414;
-  font-family: "Epilogue", sans-serif;
-  font-weight: 500;
-  background: none;
+@media only screen and (min-width: 426px) {
+  .hero-and-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .sidenav {
+    display: block;
+  }
+  .sidenav nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidenav nav button {
+    padding: 10px;
+    background: none;
+    border: none;
+  }
+  .sidenav nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,17 +11,8 @@ $Almost-black: hsl(0, 0%, 8%);
 }
 
 
-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: $Almost-black;
-
+body {      
     .main-container {
-        margin: 30px;
-        width: 375px;
-        height: 780px;
         font-family: $mainfont;
         background-color: $almost-white;
         position: relative;
@@ -40,6 +31,88 @@ body {
                     }
                 }
             }
+            .sidenav {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: $almost-white;
+                width: 64%;
+                height: 780px;
+                z-index: 4;
+    
+                .close-menu {
+                    float: right;
+                    margin: 20px 20px 30px 10px ;
+                }
+    
+                nav {
+                    display: block;
+                    margin-top: 80px;
+    
+                    button {
+                        display: block;
+                        padding: 10px;
+                        margin-left: 10px;
+                        background: none;
+                        border: none;
+                        font-family: $mainfont;
+                        color: $medium-gray;
+                    }
+    
+    
+                    .features-content, .company-content {
+                        display: none;
+                        padding: 10px;
+                        margin-left: 20px;
+    
+                        a {
+                            display: block;
+                            padding: 10px;
+                            text-decoration: none;
+                            color: $medium-gray;
+    
+                            img {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    
+                    ul {
+                        display: block;
+                        margin-left: 10px;
+    
+                        li {
+                            list-style-type: none;
+                            padding: 10px;
+    
+                             a {
+                                text-decoration: none;
+                                color: $medium-gray;
+                            }
+                        }
+                    }
+                }
+    
+                .login-register {
+                    margin: 20px;
+    
+                    #login button{
+                        border: none;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 10px 30px;
+                        border-radius: 15px;
+                        border: 2px solid $Almost-black;
+                        font-family: $mainfont;
+                        font-weight: 500;
+                        background: none;
+                    }
+                }
+    
+            }
+    
         }
         
         .wrapper {
@@ -51,6 +124,7 @@ body {
                 h1 {
                     padding: 15px;
                     font-size: 1.8rem;
+                    text-align: center;
                 }
 
                 p {
@@ -86,87 +160,33 @@ body {
 
         }
 
-        .sidenav {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: 0;
-            background: $almost-white;
-            width: 64%;
-            height: 780px;
-            z-index: 4;
-
-            .close-menu {
-                float: right;
-                margin: 20px 20px 30px 10px ;
-            }
-
-            nav {
-                display: block;
-                margin-top: 80px;
-
-                button {
-                    display: block;
-                    padding: 10px;
-                    margin-left: 10px;
-                    background: none;
-                    border: none;
-                    font-family: $mainfont;
-                    color: $medium-gray;
-                }
-
-
-                .features-content, .company-content {
-                    display: none;
-                    padding: 10px;
-                    margin-left: 20px;
-
-                    a {
-                        display: block;
-                        padding: 10px;
-                        text-decoration: none;
-                        color: $medium-gray;
-
-                        img {
-                            margin-right: 5px;
-                        }
-                    }
-                }
-                
-                ul {
-                    display: block;
-                    margin-left: 10px;
-
-                    li {
-                        list-style-type: none;
-                        padding: 10px;
-
-                         a {
-                            text-decoration: none;
-                            color: $medium-gray;
-                        }
-                    }
-                }
-            }
-
-            .login-register {
-                margin: 20px;
-
-                #login button{
-                    border: none;
-                }
-                button {
-                    width: 100%;
-                    padding: 10px 30px;
-                    border-radius: 15px;
-                    border: 2px solid $Almost-black;
-                    font-family: $mainfont;
-                    font-weight: 500;
-                    background: none;
-                }
-            }
-
-        }
-
     }
 }
+
+@media  only screen and (min-width: 426px) {
+    .hero-and-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sidenav {
+        display: block;
+
+        nav {
+            display: flex;
+
+            button {
+                padding: 10px;
+                background: none;
+                border: none;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+

@@ -15,8 +15,11 @@ featuresButton.addEventListener('click', featuresDropdown)
 companyButton.addEventListener('click', companyDropdown)
 
 
+
+
+
 function featuresDropdown(){
-    featuresArrowDown.src = "images/icon-arrow-up.svg";
+    featuresArrowDown.src = "images/icon-arrow-up.svg"
     featuresContent.style.display = 'block'
 }
 
