@@ -11,6 +11,12 @@ body .main-container {
   position: relative;
 }
 
+body .main-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body .main-container header .logo-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +33,28 @@ body .main-container header .logo-menu {
 body .main-container header .logo-menu .name-logo span {
   font-size: 30px;
   font-weight: bold;
+}
+
+body .main-container header .full-screen-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main-container header .full-screen-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main-container header .full-screen-nav nav button {
+  display: block;
+  padding: 10px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  font-family: "Epilogue", sans-serif;
+  color: dimgray;
 }
 
 body .main-container header .sidenav {
