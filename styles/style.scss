@@ -116,15 +116,14 @@ body {
         }
         
         .wrapper {
-            margin: 10px;
+            margin: 0 10px;
 
             .info-text {
-                padding: 10px;
-
                 h1 {
                     padding: 15px;
                     font-size: 1.8rem;
                     text-align: center;
+
                 }
 
                 p {
@@ -146,14 +145,12 @@ body {
                 top: 0;
                 left: 30%;
                 bottom: 0;
+                margin-bottom: 30px;
             }
 
             .clients {
                 display: inline-flex;
-                padding-top: 30px;
-
                 img {
-                    width: 70px;
                     margin: 5px;
                 }
             }
@@ -167,26 +164,39 @@ body {
     .hero-and-wrapper {
         display: flex;
         flex-direction: row-reverse;
+
     }
 
-    .sidenav {
-        display: block;
-
-        nav {
-            display: flex;
-
-            button {
-                padding: 10px;
-                background: none;
-                border: none;
+    header {
+        .logo-menu {
+            .menu {
+                display: none;
             }
+        }
 
-            ul {
+        .sidenav {
+            .close-menu {
+                display: none;
+            }
+    
+            nav {
                 display: flex;
-                align-items: center;
+    
+                button {
+                    padding: 10px;
+                    background: none;
+                    border: none;
+                }
+    
+                ul {
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }
+
+    
 }
 
 

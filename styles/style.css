@@ -111,11 +111,7 @@ body .main-container header .sidenav .login-register button {
 }
 
 body .main-container .wrapper {
-  margin: 10px;
-}
-
-body .main-container .wrapper .info-text {
-  padding: 10px;
+  margin: 0 10px;
 }
 
 body .main-container .wrapper .info-text h1 {
@@ -142,17 +138,16 @@ body .main-container .wrapper button {
   top: 0;
   left: 30%;
   bottom: 0;
+  margin-bottom: 30px;
 }
 
 body .main-container .wrapper .clients {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-top: 30px;
 }
 
 body .main-container .wrapper .clients img {
-  width: 70px;
   margin: 5px;
 }
 
@@ -166,20 +161,23 @@ body .main-container .wrapper .clients img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .sidenav {
-    display: block;
+  header .logo-menu .menu {
+    display: none;
   }
-  .sidenav nav {
+  header .sidenav .close-menu {
+    display: none;
+  }
+  header .sidenav nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .sidenav nav button {
+  header .sidenav nav button {
     padding: 10px;
     background: none;
     border: none;
   }
-  .sidenav nav ul {
+  header .sidenav nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
