@@ -36,9 +36,7 @@ body .main-container header .logo-menu .name-logo span {
 }
 
 body .main-container header .full-screen-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 body .main-container header .full-screen-nav nav {
@@ -64,13 +62,13 @@ body .main-container header .full-screen-nav nav button:hover {
 
 body .main-container header .full-screen-nav nav .features-content {
   position: absolute;
-  top: 15%;
-  left: 11.5%;
+  top: 13%;
+  left: 8%;
   border-radius: 15px;
   background: #fafafa;
   padding: 5px;
-  -webkit-box-shadow: 0px 0px 64px 8px #fafafa;
-          box-shadow: 0px 0px 64px 8px #fafafa;
+  -webkit-box-shadow: 0px 0px 14px 8px #e5d6d6;
+          box-shadow: 0px 0px 14px 8px #e5d6d6;
 }
 
 body .main-container header .full-screen-nav nav .features-content a {
@@ -87,24 +85,28 @@ body .main-container header .full-screen-nav nav .features-content a:hover {
 
 body .main-container header .full-screen-nav nav .company-content {
   position: absolute;
-  top: 15%;
-  left: 29.5%;
+  top: 13%;
+  left: 20.5%;
   background: #fafafa;
   border-radius: 15px;
   padding: 5px;
-  -webkit-box-shadow: 20px 20px 194px 18px #fafafa;
-          box-shadow: 20px 20px 194px 18px #fafafa;
+  -webkit-box-shadow: 0px 0px 14px 8px #e5d6d6;
+          box-shadow: 0px 0px 14px 8px #e5d6d6;
 }
 
 body .main-container header .full-screen-nav nav .company-content a {
   display: block;
   text-decoration: none;
   padding: 5px;
-  color: #fafafa;
+  color: dimgray;
 }
 
 body .main-container header .full-screen-nav nav .company-content a:hover {
   color: #141414;
+}
+
+body .main-container header .full-screen-nav nav .features-content, body .main-container header .full-screen-nav nav .company-content {
+  display: none;
 }
 
 body .main-container header .full-screen-nav nav ul {
@@ -266,7 +268,7 @@ body .main-container .wrapper button {
   outline: none;
   position: relative;
   top: 0;
-  left: 30%;
+  left: 0;
   bottom: 0;
   margin-bottom: 30px;
 }
@@ -282,6 +284,11 @@ body .main-container .wrapper .clients img {
 }
 
 @media only screen and (min-width: 426px) {
+  .full-screen-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .hero-and-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,17 +303,29 @@ body .main-container .wrapper .clients img {
     margin: 50px 30px 0px  30px;
   }
   .hero-and-wrapper .hero .heroimg img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
   .hero-and-wrapper .wrapper .info-text {
-    margin: 60px 0px 0px 60px;
+    margin: 50px 0px 0px 60px;
   }
   .hero-and-wrapper .wrapper .info-text h1 {
     text-align: left !important;
   }
   .hero-and-wrapper .wrapper .info-text p {
     text-align: left !important;
+  }
+  .hero-and-wrapper .wrapper button {
+    position: absolute;
+    margin-left: 60px;
+  }
+  .hero-and-wrapper .wrapper button:hover {
+    background: none;
+    color: #141414;
+  }
+  .hero-and-wrapper .wrapper .clients {
+    margin-left: 50px;
+    margin-top: 50px;
   }
   header .logo-menu .menu {
     display: none;
