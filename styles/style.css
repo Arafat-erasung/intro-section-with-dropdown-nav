@@ -57,6 +57,89 @@ body .main-container header .full-screen-nav nav button {
   color: dimgray;
 }
 
+body .main-container header .full-screen-nav nav .features-content {
+  position: absolute;
+  top: 15%;
+  left: 11.5%;
+  border-radius: 15px;
+  background: #fafafa;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 64px 8px #fafafa;
+          box-shadow: 0px 0px 64px 8px #fafafa;
+}
+
+body .main-container header .full-screen-nav nav .features-content a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: dimgray;
+}
+
+body .main-container header .full-screen-nav nav .company-content {
+  position: absolute;
+  top: 15%;
+  left: 29.5%;
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 5px;
+  -webkit-box-shadow: 20px 20px 94px 18px #fafafa;
+          box-shadow: 20px 20px 94px 18px #fafafa;
+}
+
+body .main-container header .full-screen-nav nav .company-content a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+body .main-container header .full-screen-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-container header .full-screen-nav nav ul li {
+  list-style-type: none;
+}
+
+body .main-container header .full-screen-nav nav ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: dimgray;
+  font-size: small;
+}
+
+body .main-container header .full-screen-nav .login-register {
+  margin-left: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-container header .full-screen-nav .login-register #login button {
+  border: none;
+}
+
+body .main-container header .full-screen-nav .login-register button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid #141414;
+  font-family: "Epilogue", sans-serif;
+  background: none;
+}
+
 body .main-container header .sidenav {
   display: none;
   position: absolute;
@@ -188,6 +271,23 @@ body .main-container .wrapper .clients img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 50px 30px 0px  30px;
+  }
+  .hero-and-wrapper .hero .heroimg img {
+    height: 300px;
+    width: 300px;
+  }
+  .hero-and-wrapper .wrapper .info-text {
+    margin-top: 60px;
+  }
+  .hero-and-wrapper .wrapper .info-text h1 {
+    text-align: left !important;
+  }
+  .hero-and-wrapper .wrapper .info-text p {
+    text-align: left !important;
   }
   header .logo-menu .menu {
     display: none;
@@ -199,6 +299,7 @@ body .main-container .wrapper .clients img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 30px;
   }
   header .sidenav nav button {
     padding: 10px;

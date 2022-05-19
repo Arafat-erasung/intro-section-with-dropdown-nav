@@ -48,7 +48,77 @@ body {
                     font-family: $mainfont;
                     color: $medium-gray;
                    }
+
+                   .features-content{
+                       position: absolute;
+                       top: 15%;
+                       left: 11.5%;
+                       border-radius: 15px;
+                       background: $almost-white;
+                       padding: 5px;
+                       box-shadow: 0px 0px 64px 8px $almost-white;
+                       
+                       
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            padding: 5px;
+                            color: $medium-gray;
+                        }
+
+                   }
+
+                   .company-content {
+                       position: absolute;
+                       top: 15%;
+                       left: 29.5%;
+                       background: $almost-white;
+                       border-radius: 15px;
+                       padding: 5px;
+                       box-shadow: 20px 20px 94px 18px $almost-white;
+
+                       a {
+                           display: block;
+                           text-decoration: none;
+                           padding: 5px;
+                       }
+                   }
+
+                   ul {
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+
+                       li {
+                           list-style-type: none;
+                           
+                           a {
+                               text-decoration: none;
+                               padding: 5px;
+                               color: $medium-gray;
+                               font-size: small;
+                           }
+                       }
+                   }
                }
+
+               .login-register {
+                margin-left: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #login button{
+                    border: none;
+                }
+                button {
+                    padding: 10px 30px;
+                    border-radius: 15px;
+                    border: 2px solid $Almost-black;
+                    font-family: $mainfont;
+                    background: none;
+                }
+            }
             }
             .sidenav {
                 display: none;
@@ -183,6 +253,30 @@ body {
     .hero-and-wrapper {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 50px 30px 0px  30px;
+
+        .hero {
+            .heroimg {
+                img {
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        }
+
+        .wrapper {
+            .info-text {
+                margin-top: 60px;
+                h1{
+                    text-align: left !important;
+                }
+
+                p {
+                    text-align: left !important;
+                }
+            }
+        }
 
     }
 
@@ -200,6 +294,7 @@ body {
     
             nav {
                 display: flex;
+                margin: 0 30px;
     
                 button {
                     padding: 10px;
