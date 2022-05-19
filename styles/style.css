@@ -57,6 +57,11 @@ body .main-container header .full-screen-nav nav button {
   color: dimgray;
 }
 
+body .main-container header .full-screen-nav nav button:hover {
+  cursor: pointer;
+  color: #141414;
+}
+
 body .main-container header .full-screen-nav nav .features-content {
   position: absolute;
   top: 15%;
@@ -73,6 +78,11 @@ body .main-container header .full-screen-nav nav .features-content a {
   text-decoration: none;
   padding: 5px;
   color: dimgray;
+  cursor: pointer;
+}
+
+body .main-container header .full-screen-nav nav .features-content a:hover {
+  color: #141414;
 }
 
 body .main-container header .full-screen-nav nav .company-content {
@@ -82,14 +92,19 @@ body .main-container header .full-screen-nav nav .company-content {
   background: #fafafa;
   border-radius: 15px;
   padding: 5px;
-  -webkit-box-shadow: 20px 20px 94px 18px #fafafa;
-          box-shadow: 20px 20px 94px 18px #fafafa;
+  -webkit-box-shadow: 20px 20px 194px 18px #fafafa;
+          box-shadow: 20px 20px 194px 18px #fafafa;
 }
 
 body .main-container header .full-screen-nav nav .company-content a {
   display: block;
   text-decoration: none;
   padding: 5px;
+  color: #fafafa;
+}
+
+body .main-container header .full-screen-nav nav .company-content a:hover {
+  color: #141414;
 }
 
 body .main-container header .full-screen-nav nav ul {
@@ -113,6 +128,10 @@ body .main-container header .full-screen-nav nav ul li a {
   padding: 5px;
   color: dimgray;
   font-size: small;
+}
+
+body .main-container header .full-screen-nav nav ul li a:hover {
+  color: #141414;
 }
 
 body .main-container header .full-screen-nav .login-register {
@@ -281,7 +300,7 @@ body .main-container .wrapper .clients img {
     width: 300px;
   }
   .hero-and-wrapper .wrapper .info-text {
-    margin-top: 60px;
+    margin: 60px 0px 0px 60px;
   }
   .hero-and-wrapper .wrapper .info-text h1 {
     text-align: left !important;

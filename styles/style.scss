@@ -47,6 +47,11 @@ body {
                     border: none;
                     font-family: $mainfont;
                     color: $medium-gray;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $Almost-black;
+                    }
                    }
 
                    .features-content{
@@ -64,6 +69,11 @@ body {
                             text-decoration: none;
                             padding: 5px;
                             color: $medium-gray;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $Almost-black;
+                            }
                         }
 
                    }
@@ -75,12 +85,17 @@ body {
                        background: $almost-white;
                        border-radius: 15px;
                        padding: 5px;
-                       box-shadow: 20px 20px 94px 18px $almost-white;
+                       box-shadow: 20px 20px 194px 18px $almost-white;
 
                        a {
                            display: block;
                            text-decoration: none;
                            padding: 5px;
+                           color: $almost-white;
+                           
+                           &:hover{
+                               color: $Almost-black;
+                           }
                        }
                    }
 
@@ -97,6 +112,10 @@ body {
                                padding: 5px;
                                color: $medium-gray;
                                font-size: small;
+                               
+                               &:hover{
+                                color: $Almost-black;
+                                }
                            }
                        }
                    }
@@ -267,7 +286,7 @@ body {
 
         .wrapper {
             .info-text {
-                margin-top: 60px;
+                margin: 60px 0px 0px 60px ;
                 h1{
                     text-align: left !important;
                 }
